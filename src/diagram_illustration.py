@@ -30,7 +30,7 @@ ind = np.arange(len(category_1))
 width = 0.35
 plt.bar(ind, category_1, width, label='Kategorie 1', color='b')
 plt.bar(ind, category_2, width, bottom=category_1, label='Kategorie 2', color='r')
-plt.title('Balkendiagramm')
-barchart_filename = ('../diagrams/bar_chart.png')
+plt.title('Histogramm')
+barchart_filename = '../diagrams/histogram.png'
 plt.savefig(barchart_filename)
 plt.close()
