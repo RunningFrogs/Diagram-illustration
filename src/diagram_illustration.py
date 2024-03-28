@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-#TODO: Add comments
 
+# Create boxplot and heatmap with random values
 data_boxplot = [np.random.normal(0, std, 100) for std in range(1, 4)]
 outliers = np.random.uniform(low=-9, high=9, size=(10, 3))
 data_boxplot_with_outliers = [np.concatenate([data, outlier], axis=0) for data, outlier in zip(data_boxplot, outliers.T)]
@@ -22,7 +22,7 @@ plt.subplot(1, 3, 2)
 sns.heatmap(data_heatmap, annot=True, cmap='coolwarm')
 plt.title('Heatmap')
 
-# Gestapeltes Balkendiagramm
+# Create bar graph with random values
 ind = np.arange(len(category_1))
 width = 0.35
 
